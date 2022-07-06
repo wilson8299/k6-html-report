@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test Report</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <style>
+    :root {
+      --info: #007BFF;
+      --passed: #28A745;
+      --failed: #DC3545;
+    }
+
+    html,
+    body {
+      background-color: #E4E7ED;
+      font-size: 16px;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .card-info {
+      height: 60px;
+      margin: 16px 0;
+    }
+
+    .card-title {
+      margin: 0;
+      padding-left: 10px;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .card-content {
+      margin: 0;
+      padding-left: 10px;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar bg-white navbar-expand-sm">
+      <div class="container d-flex justify-content-start">
+        <h1 class="text-dark">Test Report - 2022-07-06T09-54-21
+        </h1>
+      </div>
+    </div>
+  </header>
+  <section class="container-xl bg-white">
+    <div class="row">
+      <div class="col-xl-3">
+        <div class="card-info" style="border-left: 4px solid var(--info);">
+          <p class="card-title text-secondary">Total Request</p>
+          <p class="card-content">
+            1215
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-2">
+        <div class="card-info" style="border-left: 4px solid var(--passed);">
+          <p class="card-title text-secondary">Passed Checks</p>
+          <p class="card-content">
+            0
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-2">
+        <div class="card-info" style="border-left: 4px solid var(--failed);">
+          <p class="card-title text-secondary">Failed Checks</p>
+          <p class="card-content">
+            0
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-2">
+        <div class="card-info" style="border-left: 4px solid var(--failed);">
+          <p class="card-title text-secondary">Failed Request</p>
+          <p class="card-content">
+            0
+          </p>
+        </div>
+      </div>
+      <div class="col-xl-2">
+        <div class="card-info" style="border-left: 4px solid var(--failed);">
+          <p class="card-title text-secondary">Failed Threshold</p>
+          <p class="card-content">
+            0
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-xl bg-white" style="padding: 0;">
+    <canvas id="canvas" style="height: 45vh;"></canvas>
+  </section>
+  <section class="container-xl bg-white" style="padding: 0;">
+    <table class="table">
+      <thead class="table-dard">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Average</th>
+          <th scope="col">Minimum</th>
+          <th scope="col">Mediam</th>
+          <th scope="col">Maximum</th>
+          <th scope="col">90th Percentile</th>
+          <th scope="col">95th Percentile</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          
+            
+              <tr>
+                <td>http_req_duration</td>
+                <td>502.02</td>
+                <td>195.55</td>
+                <td>494.78</td>
+                <td>1082.36</td>
+                
+                  <td>821.45</td>
+                
+                
+                  <td>888.19</td>
+                
+              </tr>
+              
+          
+            
+              <tr>
+                <td>http_req_waiting</td>
+                <td>501.13</td>
+                <td>190.76</td>
+                <td>494.77</td>
+                <td>1082.36</td>
+                
+                  <td>821.45</td>
+                
+                
+                  <td>885.63</td>
+                
+              </tr>
+              
+          
+            
+              <tr>
+                <td>http_req_connecting</td>
+                <td>8.56</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>241.83</td>
+                
+                  <td>-</td>
+                
+                
+                  <td>-</td>
+                
+              </tr>
+              
+          
+            
+              <tr>
+                <td>http_req_tls_handshaking</td>
+                <td>9.32</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>1087.62</td>
+                
+                  <td>-</td>
+                
+                
+                  <td>-</td>
+                
+              </tr>
+              
+          
+            
+              <tr>
+                <td>http_req_sending</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>0.52</td>
+                
+                  <td>-</td>
+                
+                
+                  <td>-</td>
+                
+              </tr>
+              
+          
+            
+              <tr>
+                <td>http_req_receiving</td>
+                <td>0.89</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>15.47</td>
+                
+                  <td>3.28</td>
+                
+                
+                  <td>7.89</td>
+                
+              </tr>
+              
+          
+            
+              <tr>
+                <td>http_req_blocked</td>
+                <td>18.07</td>
+                <td>0.00</td>
+                <td>0.00</td>
+                <td>1317.10</td>
+                
+                  <td>-</td>
+                
+                
+                  <td>-</td>
+                
+              </tr>
+              
+          
+            
+              <tr>
+                <td>iteration_duration</td>
+                <td>521.76</td>
+                <td>201.75</td>
+                <td>504.87</td>
+                <td>1980.62</td>
+                
+                  <td>873.45</td>
+                
+                
+                  <td>903.43</td>
+                
+              </tr>
+              
+          
+          
+      </tbody>
+    </table>
+  </section>
+  <script>
+    const labels = [1657101240524,"2022-07-06T17:54:00.7640266+08:00","2022-07-06T17:54:01.7582963+08:00","2022-07-06T17:54:02.7554662+08:00","2022-07-06T17:54:03.753099+08:00","2022-07-06T17:54:04.756932+08:00","2022-07-06T17:54:05.756917+08:00","2022-07-06T17:54:06.7570957+08:00","2022-07-06T17:54:07.7541743+08:00","2022-07-06T17:54:08.7521506+08:00","2022-07-06T17:54:09.7629533+08:00","2022-07-06T17:54:10.7529259+08:00","2022-07-06T17:54:11.7532064+08:00","2022-07-06T17:54:12.7624505+08:00","2022-07-06T17:54:13.7541335+08:00","2022-07-06T17:54:14.7531375+08:00","2022-07-06T17:54:15.7561283+08:00","2022-07-06T17:54:16.7538228+08:00","2022-07-06T17:54:17.7523459+08:00","2022-07-06T17:54:18.7515167+08:00","2022-07-06T17:54:19.7526187+08:00","2022-07-06T17:54:20.7595177+08:00","2022-07-06T17:54:21.7547494+08:00"]
+    const vusData = [0,7,14,15,15,15,15,22,29,30,30,30,30,39,49,50,50,50,50,45,31,16,3]
+    const httpReqsData = [0,2,28,39,55,68,67,66,59,69,55,65,59,61,58,60,62,57,62,61,59,57,43]
+    const responseTimeData = [0,227.98415,233.64932500000006,364.5251615384614,255.85500727272733,233.39642205882348,219.01131194029853,230.9293136363636,311.3669830508474,395.04474637681164,520.4386890909091,476.2570430769231,506.22568135593235,505.2638540983604,586.2783948275861,716.0083550000002,826.4531274193552,816.0329140350879,825.5225548387095,830.2843819672133,780.6073050847456,511.10509824561416,247.12045813953486]
+    var ctx = document.getElementById('canvas');
+    const data = {
+      labels: labels,
+      type: 'line',
+      datasets: [{
+        label: 'vus',
+        data: vusData,
+        fill: true,
+        borderColor: 'rgba(93, 156, 236, 0)',
+        backgroundColor: 'rgba(93, 156, 236, 0.2)',
+        tension: 0.1,
+        yAxisID: 'y'
+      },
+      {
+        label: 'Request rate (sum)',
+        data: httpReqsData,
+        fill: false,
+        borderColor: 'rgb(72, 207, 173)',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+        tension: 0.1,
+        yAxisID: 'y1'
+      },
+      {
+        label: 'Response time',
+        data: responseTimeData,
+        fill: false,
+        borderColor: 'rgb(255, 206, 84)',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+        tension: 0.1,
+        yAxisID: 'y2'
+      }]
+    }
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: data,
+      options: {
+        spanGaps: true,
+        maintainAspectRatio: false,
+        animation: false,
+        scales: {
+          x: {
+            type: 'time',
+            autoSkip: false,
+            time: {
+              unit: 'second',
+              displayFormats: {
+                'second': 'hh:mm:ss',
+              },
+              stepSize: 5,
+            },
+            scaleLabel: {
+              display: true
+            },
+            title: {
+              display: true,
+              text: 'Date'
+            }
+          },
+          y: {
+            type: 'linear',
+            display: true,
+            position: 'left',
+            title: {
+              display: true,
+              text: 'vus'
+            },
+            ticks: {
+              precision: 0
+            }
+          },
+          y1: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            title: {
+              display: true,
+              text: 'Request rate (sum)'
+            },
+            ticks: {
+              precision: 0
+            },
+            grid: {
+              drawOnChartArea: false,
+            },
+          },
+          y2: {
+            type: 'linear',
+            display: true,
+            position: 'right',
+            title: {
+              display: true,
+              text: 'Response time'
+            },
+            ticks: {
+              precision: 0
+            },
+            grid: {
+              drawOnChartArea: false,
+            },
+          },
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
