@@ -7,7 +7,7 @@ k6-html-report 是一個能為 k6 壓測工具產生 HTML 報告的擴充程式�
 > 而生成報告的過程中使用到 ejs ，所以需要用 webpack 進行打包，提供給測試文件匯入。
 
 <p align="center" width="100%">
-    <img src="https://ucda1e5afbae54910d7c812aeefd.previews.dropboxusercontent.com/p/thumb/ABnLHxN9xl_BqpczfHmNH1MN8hb8jc7ZPmlXfqGgg7Sw3faYahwpg-5fOJutEeyHshIE_z61VD50D2ggeFp17cQima78OA6UX5WQTMPlZIjITuxGp6ZuSHU1LE6G3o9Je2ID5nJXolJBnqm2Pgdzgk2_JKsHm6p0aR2W7PkoJRdW7vPU9iAh7t6dlT1rNCakRS9CcvVNu1S2E-s9MY4Y4q1lSTXM7qIp4UwdYJCIZ66AN8iqqyozW6HH7X9Hzj-MuWHxDX9M1tTRgKWAheG3yDWEKCR20y6NEoy9WwnssckyHfiaiKlVou2X53GrRMT_mN5620mUhoxk4gYw9DlJNomrYIBNZALJGjp-_Xxlvazehss1rmDPSvHWi52zg0JL-zIoMw_SjPMYwzvy09pSd__SWShoevWTQExh7fus9g49dA/p.gif" alt="example" width="85%"/>
+    <img src="https://imgur.com/tuanG6T.gif" alt="example" width="85%"/>
 </p>
 
 
@@ -154,5 +154,5 @@ jsonData.forEach(element => {
 
 
 <p align="center" width="100%">
-    <img src="https://uc21f0e225dfa4436f4b9c3d4d52.previews.dropboxusercontent.com/p/thumb/ABkphf9x4xGRCtsezGxOKQF8QmPhDEPjbVfKJ2ma59ZftYcrCVhud85O2eDU50X4IR_emY0uPyf5l8Qk81jeYEvmQE6E0qulKVfQFxjavpWqhM_o7OL_66EMUtkg10TjLhniImIbQOJOWlAv-Pz-osHC0hhglfKVcvbq7tAzlC3yDSD8VCfKsU_JBuSCbuBuRcQdyzh_tZc6lsVs_Z9uI2Jzr0RL-fHVIEY4kXpl5TGsvqJkFngM7D55uk3J1rIhDxNmLhcmLbesLgtUyhOXQvv37oxYun4sbo2eWm8R9dMRICu1qapD_kEfN61ClBMNSm7dFwcKcOdGhKyGbttqih2-eSqO0RVpcgtFz-zd0KLg3W2cGZnS9eF5WDjg-xf3-zp9q4CN5WT1ABMZZwbAL4E9ZClf3vcABvtmBMvB6hpOvg/p.png" alt="html-report" width="85%"/>
+    <img src="https://imgur.com/7gM3sAe.png" alt="html-report" width="85%"/>
 </p>
